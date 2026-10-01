@@ -7,8 +7,7 @@ Not a signed extension; requires a MoneyMoney beta with unsigned extensions enab
 
 ## Installation
 
-Copy `unfcu.lua` to
-`~/Library/Containers/com.moneymoney-app.retail/Data/Library/Application Support/MoneyMoney/Extensions/`
+Copy `unfcu.lua` to the Extensions folder, where you installed MoneyMoney
 
 ## Changes in 0.2
 
