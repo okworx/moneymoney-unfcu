@@ -1,8 +1,19 @@
 # moneymoney-unfcu
 
-This extension for [MoneyMoney](https://moneymoney-app.com) adds support for
-fetching balances, transactions and statements for [UNFCU](https://www.unfcu.org/)
-accounts.
+[MoneyMoney](https://moneymoney-app.com) extension for [UNFCU](https://www.unfcu.org/).
+Fetches balances, transactions and statements (PDF).
 
-It is still in its first stages and is not yet available as a signed extension,
-so it will only work in beta versions of MoneyMoney.
+Not a signed extension; requires a MoneyMoney beta with unsigned extensions enabled.
+
+## Installation
+
+Copy `unfcu.lua` to
+`~/Library/Containers/com.moneymoney-app.retail/Data/Library/Application Support/MoneyMoney/Extensions/`
+
+## Changes in 0.2
+
+- Login via UNFCU's new sign-in (auth.unfcu.org), including verification code (2FA)
+- Banking API moved to digitalsso.unfcu.org
+- First refresh of an account loads the full transaction history
+- Account type read from the core banking record; loan accounts supported
+- Transactions show the merchant as name and the booking type as purpose
