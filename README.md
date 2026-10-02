@@ -1,13 +1,30 @@
 # moneymoney-unfcu
 
-[MoneyMoney](https://moneymoney-app.com) extension for [UNFCU](https://www.unfcu.org/).
-Fetches balances, transactions and statements (PDF).
+Fetches balances, transactions and statements (PDF) from [UNFCU](https://www.unfcu.org/) for [MoneyMoney](https://moneymoney-app.com).
 
-Not a signed extension; requires a MoneyMoney beta with unsigned extensions enabled.
+## Extension Setup
 
-## Installation
+You can get a signed version of this extension from
 
-Copy `unfcu.lua` to the Extensions folder, where you installed MoneyMoney
+* the `dist` directory in this repository
+
+Once downloaded, move `unfcu.lua` to your MoneyMoney Extensions folder.
+
+The unsigned source is in `src`; it only runs in MoneyMoney beta versions with unsigned extensions enabled.
+
+## Account Setup
+
+### UNFCU
+
+1. Make sure you can log in to UNFCU Digital Banking at https://www.unfcu.org
+2. Make sure you can receive UNFCU verification codes (2FA)
+
+### MoneyMoney
+
+1. Choose "Account" → "Add Account…"
+2. Select "Others" → "UNFCU"
+3. Enter your UNFCU username and password
+4. Enter the verification code when MoneyMoney asks for it
 
 ## Changes in 0.2
 
